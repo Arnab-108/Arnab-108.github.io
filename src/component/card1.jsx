@@ -11,6 +11,8 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
+
+  
   export default function Card1() {
     return (
       <Center py={6}>

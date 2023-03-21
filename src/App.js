@@ -6,6 +6,7 @@ import About from './component/About';
 import { Box } from '@chakra-ui/react';
 import Skills from './component/Skills';
 import Project from './component/Project';
+import Contact from './component/Contact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <About />
       <Skills />
       <Project />
+      <Contact />
     </Box>
   );
 }

@@ -1,6 +1,6 @@
-import {Flex,Box,Spacer, Avatar,Text, Input, HStack,InputRightElement , IconButton, InputGroup, Button, ButtonGroup, Heading } from "@chakra-ui/react"
+import {Flex,Box,Spacer, Avatar,Text, Input, HStack,InputRightElement , IconButton, InputGroup, Button, ButtonGroup, Heading,Link } from "@chakra-ui/react"
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
-import {Link as NavLink} from "react-router-dom"
+import {HashLink as NavLink} from "react-router-hash-link"
 function Navbar(){
     return(
         <>
@@ -11,29 +11,29 @@ function Navbar(){
                 <Spacer />
                 <Flex  gap="4vw">
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        {/* <NavLink to="/baby" > */}
+                        <NavLink to="#home" smooth >
                             <Text fontSize="lg">Home</Text>
-                        {/* </NavLink> */}
+                        </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        {/* <NavLink to="/todler" > */}
+                        <NavLink to="#about" smooth >
                             <Text fontSize="lg">About</Text>
-                        {/* </NavLink> */}
+                        </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        {/* <NavLink to="/kids" > */}
+                        <NavLink to="#skills" smooth >
                             <Text fontSize="lg">Skills</Text>
-                        {/* </NavLink> */}
+                        </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        {/* <NavLink to="/newpopular" > */}
+                        <NavLink to="#contact" smooth>
                             <Text fontSize="lg">Contact-me</Text>
-                        {/* </NavLink> */}
+                        </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        {/* <NavLink to="/hilaryduff" > */}
+                        <NavLink to="#project" smooth >
                             <Text fontSize="lg">Projects</Text>
-                        {/* </NavLink> */}
+                        </NavLink>
                     </Box>
                 </Flex>
                 <Spacer />

@@ -6,7 +6,7 @@ function Home(){
             <Box 
             width="100%" 
             height="80vh" 
-            
+            id="home"
             >
                 <VStack width={"55vw"} height="50%"   align="flex-start" gap={"20px"} pos="relative" top="28vh" left="30vw">
                     <Text fontSize="3xl">Hello I am a,</Text>

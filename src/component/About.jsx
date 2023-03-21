@@ -2,7 +2,8 @@ import { Image, Box, Flex, Heading , Text, VStack} from "@chakra-ui/react";
 import photo from "./photo.jpg"
 function About(){
     return (
-        <Box  width={"100%"} h="90vh" bgColor="gray.200" >
+        <div>
+        <Box  width={"100%"} h="90vh" bgColor="gray.200" id="about" >
             <Heading pt={"4vh"} fontWeight="semibold" textDecoration="underline">About Me</Heading>
             <Flex width={"80vw"} h="65vh" gap={"7vw"} justifyContent="center" pos={"relative"} top="10vh" left="10vw"  >
                 <Box mt="5vh" width={"25vw"} h="80%" >
@@ -29,6 +30,8 @@ function About(){
                 </Box>
             </Flex>
         </Box>
+
+        </div>
     )
 }
 
