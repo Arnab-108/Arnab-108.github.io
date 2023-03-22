@@ -3,8 +3,8 @@ import photo from "./photo.jpg"
 function About(){
     return (
         <div>
-        <Box  width={"100%"} h="90vh" bgColor="gray.200" id="about" >
-            <Heading pt={"4vh"} fontWeight="semibold" textDecoration="underline">About Me</Heading>
+        <Box  width={"100%"} h="90vh" bgColor="gray.700" id="about" >
+            <Heading pt={"4vh"} fontWeight="semibold" textDecoration="underline" color={"white"}>About Me</Heading>
             <Flex width={"80vw"} h="65vh" gap={"7vw"} justifyContent="center" pos={"relative"} top="10vh" left="10vw"  >
                 <Box mt="5vh" width={"25vw"} h="80%" >
                     <Image 
@@ -15,7 +15,7 @@ function About(){
                     />
 
                 </Box>
-                <Box>
+                <Box color={"white"}>
                     <VStack align="flex-start" justifyContent={"center"} width="40vw" pos={"relative"} top="15vh">
                         <Text fontSize="2xl" fontWeight="semibold">I am Arnab Adhikary</Text>
                         <Text fontSize={"md"} align="start">
