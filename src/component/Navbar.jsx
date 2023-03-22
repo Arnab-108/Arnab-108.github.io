@@ -3,8 +3,8 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import {HashLink as NavLink} from "react-router-hash-link"
 function Navbar(){
     return(
-        <div id="nav-menu">
-            <Flex bgColor="teal.400" minWidth='max-content' alignItems='center' w="100%" h="10vh" pos="fixed" zIndex={2}>
+        <div >
+            <Flex bgColor="teal.400" minWidth='max-content' alignItems='center' w="100%" h="10vh" pos="fixed" zIndex={2} id="nav-menu">
                 <Box p='2' ml="5vw">
                     <Heading cursor="pointer" as="h1" size="lg" fontWeight="medium">Arnab Adhikary</Heading>
                 </Box>
