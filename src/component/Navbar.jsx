@@ -3,7 +3,7 @@ import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import {HashLink as NavLink} from "react-router-hash-link"
 function Navbar(){
     return(
-        <>
+        <div id="nav-menu">
             <Flex bgColor="teal.400" minWidth='max-content' alignItems='center' w="100%" h="10vh" pos="fixed" zIndex={2}>
                 <Box p='2' ml="5vw">
                     <Heading cursor="pointer" as="h1" size="lg" fontWeight="medium">Arnab Adhikary</Heading>
@@ -11,38 +11,38 @@ function Navbar(){
                 <Spacer />
                 <Flex  gap="4vw">
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        <NavLink to="#home" smooth >
+                        <NavLink to="#home" smooth className="nav-link home" >
                             <Text fontSize="lg">Home</Text>
                         </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        <NavLink to="#about" smooth >
+                        <NavLink to="#about" smooth className="nav-link about" >
                             <Text fontSize="lg">About</Text>
                         </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        <NavLink to="#skills" smooth >
+                        <NavLink to="#skills" smooth className="nav-link skills"  >
                             <Text fontSize="lg">Skills</Text>
                         </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        <NavLink to="#contact" smooth>
-                            <Text fontSize="lg">Contact-me</Text>
+                        <NavLink to="#projects" smooth className="nav-link projects" >
+                            <Text fontSize="lg">Projects</Text>
                         </NavLink>
                     </Box>
                     <Box cursor="pointer" _hover={{border:"4px solid grey",color:"white"}}>
-                        <NavLink to="#project" smooth >
-                            <Text fontSize="lg">Projects</Text>
+                        <NavLink to="#contact" smooth className="nav-link contact" >
+                            <Text fontSize="lg">Contact-me</Text>
                         </NavLink>
                     </Box>
                 </Flex>
                 <Spacer />
-                <Button mr="10vw" colorScheme='teal' size='lg'>
+                <Button mr="10vw" colorScheme='teal' size='lg' className="nav-link resume">
                    + Resume
                 </Button>
             </Flex>
             
-        </>
+        </div>
     )
 }
 

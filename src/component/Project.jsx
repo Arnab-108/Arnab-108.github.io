@@ -4,7 +4,7 @@ import Card2 from "./card2"
 
 function Project(){
     return(
-        <Box  width={"100%"} h="90vh" bgColor="gray.700" id="project" >
+        <Box  width={"100%"} h="90vh" bgColor="gray.700" id="projects" >
             <Heading pt={"4vh"} fontWeight="semibold" textDecoration="underline" color={"white"}>Project</Heading>
             <Grid m={"10vh auto"} gridTemplateColumns={"repeat(2,1fr)"} gap={10} >
                 <GridItem>
