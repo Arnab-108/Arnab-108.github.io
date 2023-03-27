@@ -55,13 +55,13 @@ import {
               Babybags a clone of Carter's.com is an e-commerce website that sells
               different types of garments for kids.
             </Text>
-            {/* <Text
+            <Text
               className="project-tech-stack"
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
               React|Chakra Ui | Json-Server
-            </Text> */}
+            </Text>
             <Stack
               width={'100%'}
               mt={'2rem'}

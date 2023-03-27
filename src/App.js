@@ -7,6 +7,7 @@ import { Box } from '@chakra-ui/react';
 import Skills from './component/Skills';
 import Project from './component/Project';
 import Contact from './component/Contact';
+import Mystats from './component/My Stats';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Skills />
       <Project />
       <Contact />
+      <Mystats />
     </Box>
   );
 }
