@@ -2,7 +2,7 @@ import { Box, Grid, GridItem, Heading ,Image } from "@chakra-ui/react";
 
 function Skills(){
     return (
-        <Box h={"80vh"} w="100%" id="skills">
+        <Box h={"80vh"} w="100%" id="skills" className="skills-card">
             <Heading pt={"5vh"} textDecoration={"underline"}  fontWeight="semibold">My Skills</Heading>
             <Grid gridTemplateColumns="repeat(3,1fr)" gap={17} m="7vh 17vw" width="70vw" >
                 <GridItem className="skills-card" cursor={"pointer"} >

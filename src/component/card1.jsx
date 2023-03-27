@@ -15,7 +15,7 @@ import {
   
   export default function Card1() {
     return (
-      <Center py={6}>
+      <Center className="project-card" py={6}>
         <Stack
           borderWidth="1px"
           borderRadius="lg"
@@ -57,10 +57,11 @@ import {
             </Text>
             <Text
               className="project-tech-stack"
+              fontWeight={"semibold"}
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
-              React|Chakra Ui | Json-Server
+              React | Chakra Ui | Json-Server
             </Text>
             <Stack
               width={'100%'}

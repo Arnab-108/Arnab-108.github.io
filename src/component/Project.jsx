@@ -8,10 +8,10 @@ function Project(){
             <Heading pt={"4vh"} fontWeight="semibold" textDecoration="underline" color={"white"}>Project</Heading>
             <Grid m={"10vh auto"} gridTemplateColumns={"repeat(2,1fr)"} gap={10} >
                 <GridItem>
-                    <Card1 className="project-card" />
+                    <Card1  />
                 </GridItem>
                 <GridItem>
-                    <Card2 className="project-card" />
+                    <Card2 />
                 </GridItem>
             </Grid>
         </Box>
