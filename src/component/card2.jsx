@@ -53,13 +53,13 @@ import {
               px={3}>
               A clone of Buffer.com , an application designed to manage and schedule posts of different socal media platforms as well as analyze their results and engage with their community.
             </Text>
-            <Text
+            {/* <Text
               className="project-tech-stack"
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
               HTML|CSS | JavaScript
-            </Text>
+            </Text> */}
             <Stack
               width={'100%'}
               mt={'2rem'}
