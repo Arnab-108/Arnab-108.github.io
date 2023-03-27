@@ -41,20 +41,27 @@ import {
             alignItems="center"
             p={1}
             pt={2}>
-            <Heading fontSize={'2xl'} fontFamily={'body'}>
+            <Heading className="project-title" fontSize={'2xl'} fontFamily={'body'}>
               BabyBags 
             </Heading>
             <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
               @Individual Project
             </Text>
             <Text
+              className="project-description"
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
               Babybags a clone of Carter's.com is an e-commerce website that sells
               different types of garments for kids.
             </Text>
-  
+            <Text
+              className="project-tech-stack"
+              textAlign={'center'}
+              color={useColorModeValue('gray.700', 'gray.400')}
+              px={3}>
+              React|Chakra Ui | Json-Server
+            </Text>
             <Stack
               width={'100%'}
               mt={'2rem'}
@@ -62,7 +69,7 @@ import {
               padding={2}
               justifyContent={'space-between'}
               alignItems={'center'}>
-            <Link href='https://babybags.netlify.app/' isExternal >
+            <Link  className="project-deployed-link" href='https://babybags.netlify.app/' isExternal >
               <Button
                 flex={1}
                 width="8vw"
@@ -75,7 +82,7 @@ import {
                     Live Site
               </Button>
             </Link>
-            <Link href='https://github.com/Arnab-108/spotty-butter-9254' isExternal>
+            <Link className="project-github-link" href='https://github.com/Arnab-108/spotty-butter-9254' isExternal>
                 <Button
                     flex={1}
                     width="8vw"

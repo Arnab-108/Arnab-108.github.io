@@ -12,13 +12,14 @@ function About(){
                         boxSize='sm'
                         src={photo}
                         alt='Dan Abramov'
+                        className="home-img"
                     />
 
                 </Box>
                 <Box color={"white"}>
                     <VStack align="flex-start" justifyContent={"center"} width="40vw" pos={"relative"} top="15vh">
-                        <Text fontSize="2xl" fontWeight="semibold">I am Arnab Adhikary</Text>
-                        <Text fontSize={"md"} align="start">
+                        <Text fontSize="2xl" fontWeight="semibold"  id="user-detail-name">I am Arnab Adhikary</Text>
+                        <Text fontSize={"md"} align="start" id="user-detail-intro">
                             Innovative, result-oriented Full-Stack Web Developer with a
                             good grasp of React Framework and other web
                             development tools like html , css , js. Have the

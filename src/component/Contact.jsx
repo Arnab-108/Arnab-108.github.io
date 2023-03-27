@@ -18,25 +18,25 @@ function Contact(){
                         </VStack>
 
                         <VStack align={"flex-start"} mt="5vh" gap={6}>
-                            <Link >
+                            <Link id="contact-email" >
                                 <HStack cursor={"pointer"} gap={5}>
                                     <EmailIcon sx={{fontSize:"35px" , color:"#92bcb5"}} />
                                     <Text align={"end"} fontSize={"17px"}>arnabadhikary007@gmail.com</Text>
                                 </HStack>
                             </Link>
-                            <Link href="https://www.linkedin.com/in/arnab-adhikary-80393822a/" isExternal>
+                            <Link  id="contact-linkedin" href="https://www.linkedin.com/in/arnab-adhikary-80393822a/" isExternal>
                                 <HStack cursor={"pointer"} gap={5}>
                                     <LinkedInIcon sx={{fontSize:"35px" , color:"#92bcb5"}} />
                                     <Text align={"end"} fontSize={"17px"}>Linkedin</Text>
                                 </HStack>
                             </Link>
-                            <Link href="https://github.com/Arnab-108" isExternal>
+                            <Link id="contact-github" href="https://github.com/Arnab-108" isExternal>
                                 <HStack cursor={"pointer"} gap={5}>
                                     <GitHubIcon sx={{fontSize:"35px" , color:"#92bcb5"}} />
                                     <Text align={"end"} fontSize={"17px"}>Github</Text>
                                 </HStack>
                             </Link>
-                            <Link>
+                            <Link  id="contact-phone">
                                 <HStack cursor={"pointer"} gap={5}>
                                     <LocalPhoneIcon sx={{fontSize:"35px" , color:"#92bcb5"}} />
                                     <Text align={"end"} fontSize={"17px"}>+91 9088069205</Text>

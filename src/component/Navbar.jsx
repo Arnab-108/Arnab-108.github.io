@@ -37,7 +37,7 @@ function Navbar(){
                     </Box>
                 </Flex>
                 <Spacer />
-                <Button mr="10vw" colorScheme='teal' size='lg' className="nav-link resume">
+                <Button id="resume-button-1" mr="10vw" colorScheme='teal' size='lg' className="nav-link resume">
                    + Resume
                 </Button>
             </Flex>

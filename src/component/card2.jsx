@@ -40,19 +40,26 @@ import {
             alignItems="center"
             p={1}
             pt={2}>
-            <Heading fontSize={'2xl'} fontFamily={'body'}>
+            <Heading className="project-title" fontSize={'2xl'} fontFamily={'body'}>
               MediaFlow
             </Heading>
             <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
               @Colaborative Project
             </Text>
             <Text
+              className="project-description"
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
               A clone of Buffer.com , an application designed to manage and schedule posts of different socal media platforms as well as analyze their results and engage with their community.
             </Text>
-  
+            <Text
+              className="project-tech-stack"
+              textAlign={'center'}
+              color={useColorModeValue('gray.700', 'gray.400')}
+              px={3}>
+              HTML|CSS | JavaScript
+            </Text>
             <Stack
               width={'100%'}
               mt={'2rem'}
