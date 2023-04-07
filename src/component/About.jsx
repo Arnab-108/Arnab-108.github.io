@@ -22,7 +22,7 @@ function About(){
                         <Text fontSize={"md"} align="start" id="user-detail-intro">
                             Innovative, result-oriented Full-Stack Web Developer with a
                             good grasp of React Framework and other web
-                            development tools like html , css , js. Have the
+                            development tools like HTML , CSS , JS. Have the
                             ability to convert business requirements into
                             technical solutions . Looking forward to start my IT
                             career

@@ -70,7 +70,7 @@ import {
               padding={2}
               justifyContent={'space-between'}
               alignItems={'center'}>
-            <Link  className="project-deployed-link" href='https://babybags.netlify.app/' isExternal >
+            <a  className="project-deployed-link" href='https://babybags.netlify.app/' target='_blank' >
               <Button
                 flex={1}
                 width="8vw"
@@ -80,10 +80,12 @@ import {
                   bg: 'gray.200',
                 }}
                 >
+                  <Text textDecoration={"none"}>
                     Live Site
+                  </Text>
               </Button>
-            </Link>
-            <Link className="project-github-link" href='https://github.com/Arnab-108/spotty-butter-9254' isExternal>
+            </a>
+            <a className="project-github-link" href='https://github.com/Arnab-108/spotty-butter-9254' target='_blank'>
                 <Button
                     flex={1}
                     width="8vw"
@@ -100,9 +102,12 @@ import {
                     _focus={{
                     bg: 'blue.500',
                     }}>
-                    Git Repo
+                    <Text textDecoration={"none"}>
+                      Git Repo
+                    </Text>
+                    
                 </Button>
-            </Link>
+            </a>
             </Stack>
           </Stack>
         </Stack>

@@ -68,7 +68,7 @@ import {
               padding={2}
               justifyContent={'space-between'}
               alignItems={'center'}>
-                <Link href='https://media-flow.netlify.app/' isExternal>
+              <a  className="project-deployed-link" href='https://media-flow.netlify.app/' isExternal>
               <Button
                 flex={1}
                 width="8vw"
@@ -78,11 +78,12 @@ import {
                     bg: 'gray.200',
                 }}
                 >
-                
+                <Text textDecoration={"none"}>
                     Live Site
+                </Text>
               </Button>
-                </Link>
-              <Link href='https://github.com/Arnab-108/spotty-butter-9254' isExternal>
+              </a>
+              <a className="project-github-link" href='https://github.com/Arnab-108/spotty-butter-9254' isExternal>
                 <Button
                     flex={1}
                     width="8vw"
@@ -100,10 +101,12 @@ import {
                         bg: 'blue.500',
                     }}>
                         
-                            Git Repo
+                    <Text textDecoration={"none"}>
+                      Git Repo
+                    </Text>
                         
                 </Button>
-                </Link>
+                </a>
             </Stack>
           </Stack>
         </Stack>
