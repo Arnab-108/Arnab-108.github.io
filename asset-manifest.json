@@ -1,18 +1,19 @@
 {
   "files": {
     "main.css": "/static/css/main.073c9b0a.css",
-    "main.js": "/static/js/main.14eee207.js",
+    "main.js": "/static/js/main.50bbc0ea.js",
     "static/js/787.d3befce1.chunk.js": "/static/js/787.d3befce1.chunk.js",
     "static/media/Arnab_Adhikary_Resume.pdf": "/static/media/Arnab_Adhikary_Resume.2e030daa06da7ccb617e.pdf",
     "static/media/photo.jpg": "/static/media/photo.c4398d54a6df6892df49.jpg",
+    "static/media/photo2.jpg": "/static/media/photo2.e223b8e498bd5bae8f24.jpg",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
     "main.073c9b0a.css.map": "/static/css/main.073c9b0a.css.map",
-    "main.14eee207.js.map": "/static/js/main.14eee207.js.map",
+    "main.50bbc0ea.js.map": "/static/js/main.50bbc0ea.js.map",
     "787.d3befce1.chunk.js.map": "/static/js/787.d3befce1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.073c9b0a.css",
-    "static/js/main.14eee207.js"
+    "static/js/main.50bbc0ea.js"
   ]
 }
