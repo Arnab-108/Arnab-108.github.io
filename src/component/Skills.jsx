@@ -2,82 +2,163 @@ import { Box, Grid, GridItem, Heading ,Image, Text, VStack } from "@chakra-ui/re
 
 function Skills(){
     return (
-        <Box h={"96vh"} w="100%" id="skills" className="skills-card">
-            <Heading pt={"5vh"} textDecoration={"underline"}  fontWeight="semibold">My Skills</Heading>
-            <Grid gridTemplateColumns="repeat(3,1fr)" gap={14} m="7vh 17vw" width="70vw" >
-                <GridItem className="skills-card" cursor={"pointer"} _hover={{boxSize:"230px" , boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}} >
+        <Box h={["100%","100%","100%","110vh"]} w="100%" id="skills" backgroundColor={"#191919"} className="skills-card">
+            <Heading pt={"12vh"} margin={"auto"} size={"lg"} width={["30vw","20vw","md","20vw","10vw"]} fontWeight="semibold" textDecoration="underline" color={"white"}>My Skills</Heading>
+            <Grid gridTemplateColumns={{base:"repeat(1,1fr)",md:"repeat(2,1fr)",lg:"repeat(4,1fr)"}} gap={5} m="14vh 17vw" width="70vw" paddingLeft={"5vw"} borderRadius={"7px"} paddingRight={"4vw"} backgroundColor={"black"} >
+                <GridItem pt={"3vh"} className="skills-card" cursor={"pointer"} 
+                // _hover={{boxSize:"230px" , boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}} 
+                >
                     <VStack>
                         <Image 
                         className="skills-card-img"
-                        boxSize='200px'
+                        boxSize='80px'
                         src='https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/800px-HTML5_Badge.svg.png'
                         alt='Dan Abramov'
                         />
-                        <Text className="skills-card-name">HTML</Text>
+                        <Text color={"white"} className="skills-card-name">HTML</Text>
 
                     </VStack>
                 </GridItem>
-                <GridItem className="skills-card" cursor={"pointer"} _hover={{boxSize:"230px" , boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}} >
+                <GridItem pt={"3vh"} className="skills-card" cursor={"pointer"}  >
                     <VStack>
                         <Image 
                         className="skills-card-img"
-                        boxSize='200px'
+                        boxSize='80px'
                         src='https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/800px-CSS3_logo.svg.png'
                         alt='Dan Abramov'
                         />
-                        <Text className="skills-card-name">CSS</Text>
+                        <Text color={"white"} className="skills-card-name">CSS</Text>
                     </VStack>
                 </GridItem>
-                <GridItem className="skills-card" cursor={"pointer"} _hover={{boxSize:"230px" , boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}} >
+                <GridItem pt={"3vh"} className="skills-card" cursor={"pointer"} >
                     <VStack>
                         <Image 
                             className="skills-card-img"
-                            boxSize='200px'
+                            boxSize='80px'
                             src='https://w1.pngwing.com/pngs/136/126/png-transparent-javascript-logo-angularjs-nodejs-computer-programming-web-development-computer-software-jquery-yellow.png'
                             alt='Dan Abramov'
                             
                         />
-                        <Text className="skills-card-name">JavaScript</Text>
+                        <Text color={"white"} className="skills-card-name">JavaScript</Text>
                     </VStack>
                 </GridItem>
-                <GridItem className="skills-card" cursor={"pointer"} _hover={{boxSize:"230px" , boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}}>
+                <GridItem pt={"3vh"} className="skills-card" cursor={"pointer"}>
                     <VStack>
                             <Image 
                             className="skills-card-img"
-                            boxSize='200px'
+                            boxSize='80px'
                             src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
                             alt='Dan Abramov'
                             cursor={"pointer"}
                             
                             />
-                            <Text className="skills-card-name">REACT</Text>
+                            <Text color={"white"} className="skills-card-name">React</Text>
 
                     </VStack>
                 </GridItem>
-                <GridItem className="skills-card" cursor={"pointer"} _hover={{boxSize:"230px" , boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}} >
-                    <VStack>
-                        <Image 
-                        className="skills-card-img"
-                        boxSize='200px'
-                        src='https://cdn.iconscout.com/icon/free/png-256/node-js-1174925.png'
-                        alt='Dan Abramov'
-                        />
-                        <Text className="skills-card-name">Node Js</Text>
-                    </VStack>
-                </GridItem>
-                <GridItem className="skills-card" cursor={"pointer"} _hover={{boxSize:"230px" , boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px"}} >
+                <GridItem className="skills-card" cursor={"pointer"} >
                     <VStack>
                     <Image 
                     className="skills-card-img"
-                     boxSize='200px'
-                     src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAAC+CAMAAABH/bBwAAAAkFBMVEX///92Srx+T8l4S792Srt8TsZ7TcR/T8rw6/d5TML7+v359/zSxOnz8Pl+VcCrkNbIt+Tg1e+ni9STcMru6ffAq+CbfM5+U8OihNG6pN20ndrNvufy7/nm3/OWdcvk3PGJZMWwl9mPa8i1ntuCWsHXy+vb0O3FsuN8U76HYcXPweice9CggdGYdc6vldqIYsMypGvSAAAQhUlEQVR4nNVd6ZqivBJuExKMCyKCSLsratNqf/d/dwfshSpIwq5z3h/zzDzTjVRS++bbW0fon+3j7RD2HghnTrBcD7v6rM6wviwOhiAmE/SbECoYYTS8BdP/I2K2waxHCP8hAYAKQuhuP331C5bC+HKnMiL+iOGE3u1//lrc9zDmICUVP7QwEnnjV7+qDu6XZfICKr7BzegyePXrqjAOLCJKkfEghRxOr35jOZZRBTISMOH0X/3SeaxvrBxTAVASjV793lksQ7NIxGXg4vjqN0cYTrgwdEdPFVQa1Lz+Q+y1nhHFi1LBTZNxQeO/xGZe9lNmtH31+//iFBI5EYQkLtbxsjydzyM7cGaWMPP6gFn/iPayKc+zVWzz6H+TyxSbvf5oH/Hs7Rnc/3zRqyN4EvEQhB6CqdTgDUc3miHFEP8CJUGe8RkLtX7hdiFYlpKXq+E8HYwd7CI/6nQgFF5jzF3np7yuEjk6BDksS/hQg6DHECUsXHf/tmpcMnRQEpZ1Bc8RUnUGObzQHT4JrEy5+Cpv3fpXE1Fi3jp8Uz22PvauKnpOAwdrL9Pr6kULMDwg3UPJ1a34hAnyzyh9kcAvCKbjq3qgNEGPYLuXBMAXxOKU1XJjF+gh5lfbL1kCWx8JOnmv9ZThjAAtTMXzva7BDHEFmdR8Tj8Egmaww9Pj+ADSYZBr7Rc4oVCFPFtzrSFjGTxsEByhIxHWk8OsmwlZu5ne3EAxebK8n1AmkQSNHoZul/rP9LkG0BQaZNNQQhFzEaeddywFG7F14zNE5/LMKxlG0MdqQdEgTjXravLqQBfCZi088Qae+DzFNTiAC6G0jWLHFBqThrqjPEbQ6a1t0jGgA8r/e5J5n0M+8Ku67nKgK2HPyURs4WeabaVuoZSQRUsP1WMPLyRsK9A+AaMoPp4h7sMIfCRpL5c+A5JHLq09Vo0TNF5WOxKS4AIuml1be6waDmTmFm3X2Epvmj6Bt8Yh+DzaZkEAnhBbtvhgOUbAGLJNm08+gSc/wXNE52a3+eThLqVERF3nU4aAs4TVbpIT6PV2HB8dTiK1hm3fP+KtrmP3d5CHYi3nbqAeYV0ngkEI1J5V/8UtfTjvOOno+oCzWveIQO6S+t2WepfQj2hVZyWY9tJj6tiSQMXSfmwNQ+iaKdiyAJ4dO7T/+Hn6eNKptPeBP9Smn/WLYyokvNMs8Bl68K2LyNubnd5It36jBz6o14HtPafS3q1tBwUmEXag6PsfqdriXaqtDZD1onRWHRYfWkDaO3RSoA+hdbRce3KdzWaL4FyNnMHCZ+RHBZv7Zi+rg2ukN2+qs2hbx2KEMc4JETuvGgeul85OPLqGu0ylwEyHkoWHewqKztzcVU1SDafvsx5hpNWoDcNODa9SabmHTG8jEzWYfevdedidIQmggyLPn7i5ZjpDaLhQg63dHSGT1PAqosPhgUia6bqwnY0A4gWxk57XxMyR0WujFNQyZqmMcKkZOQt5symZT3/huuPhq3viByDNIc8FolovuhPjG73ex4cVHjaLfWCf3Fc1aMEMilTLr31lMzZNIURiYUxGjWRaafSCaSWY1JQadk/a/qumTTCTsF50C07tpZDLAAbsUgdiUYmQX3oEIcyaHUerpxGyNgoIOVQeV/iF4ISHt8uTlBsUASIhZBxVGx/JEkOIf/eeQQsiROJ3QOe4HigjxubSucAUEtLsRv5osZyOexuLCBnUlxEEQcTs0qWNQYTI0k5OHa0lQ3wt4bE7DlsXqd+LmpDYDCagytGeLIRp7bsS/EI74n6ohIT61gPGw7Cz2HLwQoqE6X91cyvjwvTcRHEl1Dj1H3DX6/PJ9t6d+cEyRDLOqyOHEv+9i+xWoa8V35n0Sgwz79AMxtvPwNlZwmQaXSdI6LXvKyPvdy79EU8WjxhM2bs5cEfBPBKa6V5BDu13phTGI4kjn6dD+PrS1vh0nPlEOVXKhNO2qBRHiG/Da3au0mCiRKTrXm4WU9wLNcOWY2WYMVVVdIcOQWaRkrAka/TtuU/kJlWQeauXAiqh1FAqeTtMBycF4YsKr7AOdkw+mklavZQLSMZrepbH3o6SB5i1qFj5HYxuvmTmsmdwNmkvlISZRm3Xw2B6mdxui/dRHYZY76VT8dQ8tFYfXfdK5X4bo38MZaQwvwl7TcELr4qC9tYwDiSkGILVz9AvfQuwJjAkrbT7auAerbzYUzKv6d7vOe8BzlzAilXXWSl3QvOuGznUcYnH8/hQoFTDLLbR/RT6eZPfvkCi6rXF9S6xG9DPha3LpPsmt9gmRbmZcVbg8ORxsh7nz4EzUpRHaR/9ichcisH9ake49L+ngqENR/5vx9L+i9MuO/1ejZKL+B23h0IC3cZnDRWMJxlJMQQtT8mF/a0NgBYDZnef1MH+lqwqIXUpuYDJFBGlQgILIB3370C4GxwcxJSUk/iYjrTQAZspULdeh2XXLAZ7JmpsJFjiMXXoVgEhUdVDu4Ht88obCU4+pp6Aziw4afyEdmn4ViEaOjfIrqgOsbUw7YKDkYQtcICfOmiX2Ge8W8Hc6AOU1Y7gO8RaG7ZLt9zAXIT+DGc2Cg5ynvnpjG+z76wVf+iu1642iTW+43fTxkTvmZ+dZSQajgy22Pey9q7Rh2FYu4WtYf0MJbrx9xOulJv3LPfAgR5htVT3Wzs+YUmGW3BCwqOaY1d3NH3OQ5XiXIVI0M1b/ploEKad1IbnQ3snzJ36oMeoR8Qw5QnPbF3WlE0Ttz9A4mSjWl1DkRuhDTeKPrslzPUZJMdXCWCXMe21EF05+Z1vVNMHOEXLWIS09TxmLEiHwuLsgcC1EJQEst11OjFe4ll6WTQByxuxICl8ADjEKcKm4j6VVkjiT1dLfIBUl+Ty0DPVKfQBmhhs2gu6UdSGdL2ZV7wlIqe54DMpU880wlJh0wHhs2p7q246tI/n6bMGfqT9XwCYp2s6MKYq1unvegTJz/Zsw30FBt/p3Cj46c1Cd7yrABOiMhHZNzAyP/kJR1f1+0HwzHaTPXhbQ11z0/WsjyO0GwC97R0QUtQFDVrLe4225JzwUj0ITQXmDR87vjw4UcGKxhnxjoEGUmJrWgx6Wq6A2wGoAFICnZNCbkFdJ00G1HS9Evr8wha2HQI33AUDD1oxk7xAg2UTJw0hBcnlL2AWQfoAFMjRRSmAtE2DVB2MnDMoihFQc0IaYoHKR6lwCfVhksnKdfu1BkbULV6Fw2gwVv1LUIOTKXMh2W45I7Qsazev0cen7ucs9EdRCw//EShQ+CghIQnQlTyamDgjvlPVrR+p9G+JGSsoJb+eCDAMvFxKV2qTqelXdCIHBwUlJcZHoOLi3+YT6Cym6M3IQa45hbmoJisjed8GFSVSotCWfPMWuODSulR1luatGiUL6YBDqQkryJffBd9UAdBeaYFVsXfF5Wvju0RxmfcypwHZ+3uSNPWzqjizNzkltGLh5D3Po+asXA4TNsckMyqgNa6KlVb19LP/qvgsrpUVEk4WJXOx0A1P0p7r9N9lZOwH6n7lSm5kZggo+SKM0r8Ofb7E7qRbI6q0Aag91yrpLuT89bgw7lV6lwFvJR+aOlqkwtIetVGuUgJCiQTuVOwnAv1KIhwApVUhT6VrIC8v7nD3Qo1B5lVqAGnPBYP9mtyJ5hl5Qsra93HT/YIgro3Fe/d3QRVWnfTV4Xb5i/1CjFVjzw54QKy2/hRglWn4vnoyrDQhZ7xZtsZ6MNCdaHpvf3/XB/wYurGXkovQhjsoIbWyGKCeE5/e37Mk6UcltMJezhJkNmLX6aQAm/2YAwipkpNWT4uU5FBUxKi5PwRMUPB5TUIuypxUOal1LXilNXfsrFIGF3cgI1Wmg1EKGKGUD47XevfMep0tgBAaQWGvcixf0kii7HE46LfrrozHhKQnw6vMm2HeqHghHmono7zmri5IyO4tSiW/UguALQtTDaLN5P9ghOsitXf8gn0afPM2S8ORapsw9/n6n8GtEirrjPt2eFS3GQSo31hrLf70T1UdmK/IsjKNVNsQ1ZhrM1Z8s6B/zAFZLVFV5gIff1OEuStxH2tMR5NdLtBFeQchUvVdmOc7Jz9uAuWm/16CR9xMvxI51E/nA+fAvMDaSA1PerQIKTNNk/uHYxm96x6wS9BotQUc+xpBj1wxzabH+Gx7nrdcl3L6Mv1jcZDeoFAElNaDmdKApPNGxW2Y2ZzSqFkVbhbzx2iPc8crK08WlnN1f08pgLwBT8oQXubfnSH7tXAGK2M9leiDnNgjHw8TXfV1ejEC3L0b02E1mpCGKcJHfIkWJDa6ax3Gi4z5LJwZLQCcOfjpuALquLMtdtuM2o3pEM26O5f5cj/sQ+loQ5ftZwMxWjprJAcKtn/yHUPYctbFGMLYYdlvTaS8oYKEpaa/yicMkjpYUXvO7kHrGbTpd0GsYDj0p2xRn0zNsFOJQUCzbGU05atMiJnmxGCfDPVblffzDH+LY+8xG9mUjk8YmoHuAthu09BMYYz3uetI9FXTLx1woVRDHoI6uc0ltZ87WRTZ/MtOcTkCprFQgr+t4bztnEsSFCRs7D3skU3C36QIm0fjUK+F6ejV3peN2Zu1xlQRPNxpjbPGuL+fNphU/sbQk32vdqx2JQ33FXHBr5r1RXBZkhKnkTlZHmQz6Qbnza/aFsi45phnHGH1Yt7rs8ByJv+29tKrLDTIfLWypO6ZGR7pEateFDpcHpg0wy3Myl8rmseeQatksEjS9hZksrmC3apfiuvt5GT0iN+crVy8eCXW5FLj7WTz0sTfVzvD88RSLTcxZ80dhsy0qyGonFWH12z1hhLrq3SuaxscqGp1TnwdsizLqErafHvDG5NiD0HF/ONDrlYgiHG1i9svx+fjrGeqthlxdpUeR8DoRjceBuHucVpTR0cyjpWvelDGrJs3VWvj1dS7Rd8boKUQiv6SwYTQ+OHhYll8UNsvKxsp6wfbhzfZiI1gpBfNj8vTGlmzoTsdec4sFOplTImXYAVSG9i/fht+QVg4v2gO6s21r37uE5hV4Onsc8Hc9/vExBD6EUazzeKB+WwXWj1mMq7Yjvv9a8SfyFXfNAKLkJlJo1swcnPUDFanYGNJNnCV2Fxj+5qCrRDsD1zoSHi8oOlPFJ+XDeKTHa3Cj67O8bI8nafr6fm8vLw7hw8hkTxDlGrq2s7kO5WqQhBLRUZ2Qv2HmISaxxXT5O/J2j35mjpSsp11eFRfSlkkLWTKZYvuVXtUP6uBVf9dxSRNrwrzXBL69ZefuWXmFUAVJkmF2H2tS0qy+XKiUSm2KdOMJcHEoqLfNLgcVGvhdEjW3c71Rm68vCo9gCIy+L1GeDlYbqhs/5gSNDYJ1s0u4Z5Nv8Lqp0QJn9UNA6ZfESNFSvaXCEJ3k8+ywyQre2OYSmdA8nxO/FuTYH/4OUlWQmqJSWylES28bcXvtghmySB7KSpMsStVotTTEhvXkEpXqT7svQg3e3tba/pt7c1Dpicm+Qi6+zq1tAt0db5MNjuL8sRKEWImS/84Fx/R3bmcGo0er07HTSi+bR8+p8Q+xs5JOA+mLW80Hbrbk+0dj3vH2R+Pnj2artvJSa6m9td895HwqBmb9uRPEtv3j+g6uUxftfG/Ngbj2Jm2PS+YTI6eZ3/Grnali/gfQvr9DDjBGS4AAAAASUVORK5CYII='
+                     boxSize='80px'
+                     src='https://img.icons8.com/color/256/redux.png'
                      alt='Dan Abramov'
                     />
-                    <Text className="skills-card-name">REDUX</Text>
+                    <Text color={"white"} className="skills-card-name">Redux</Text>
+                    </VStack>
+                    
+                </GridItem>
+                <GridItem className="skills-card" cursor={"pointer"} >
+                    <VStack>
+                        <Image 
+                        className="skills-card-img"
+                        boxSize='80px'
+                        src='https://img.icons8.com/color/512/mongodb.png'
+                        alt='Dan Abramov'
+                        />
+                        <Text color={"white"} className="skills-card-name">MongoDB</Text>
+                    </VStack>
+                </GridItem>
+                <GridItem className="skills-card" cursor={"pointer"} >
+                    <VStack>
+                    <Image 
+                    className="skills-card-img"
+                     boxSize='80px'
+                     src='https://img.icons8.com/?size=512&id=2ZOaTclOqD4q&format=png'
+                     alt='Dan Abramov'
+                    />
+                    <Text color={"white"} className="skills-card-name">Express Js</Text>
+                    </VStack>
+                    
+                </GridItem>
+                <GridItem className="skills-card" cursor={"pointer"} >
+                    <VStack>
+                    <Image 
+                    className="skills-card-img"
+                     boxSize='80px'
+                     src='https://img.icons8.com/color/256/nodejs.png'
+                     alt='Dan Abramov'
+                    />
+                    <Text color={"white"} className="skills-card-name">Node Js</Text>
+                    </VStack>
+                    
+                </GridItem>
+                <GridItem paddingBottom={"3vh"} className="skills-card" cursor={"pointer"} >
+                    <VStack>
+                    <Image 
+                    className="skills-card-img"
+                     boxSize='80px'
+                     src='https://img.icons8.com/color/256/chakra-ui.png'
+                     alt='Dan Abramov'
+                    />
+                    <Text color={"white"} className="skills-card-name">Chakra UI</Text>
                     </VStack>
                     
                 </GridItem>
                 
+                <GridItem paddingBottom={"3vh"} className="skills-card" cursor={"pointer"}>
+                    <VStack>
+                            <Image 
+                            className="skills-card-img"
+                            boxSize='80px'
+                            src='https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png'
+                            alt='Dan Abramov'
+                            cursor={"pointer"}
+                            
+                            />
+                            <Text color={"white"} className="skills-card-name">React-Native</Text>
+
+                    </VStack>
+                </GridItem>
+                
+                <GridItem paddingBottom={"3vh"} className="skills-card" cursor={"pointer"}>
+                    <VStack>
+                            <Image 
+                            className="skills-card-img"
+                            boxSize='80px'
+                            src='data:image/png;base64,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'
+                            alt='Dan Abramov'
+                            cursor={"pointer"}
+                            
+                            />
+                            <Text color={"white"} className="skills-card-name">Django</Text>
+
+                    </VStack>
+                </GridItem>
+                <GridItem paddingBottom={"3vh"} className="skills-card" cursor={"pointer"}>
+                    <VStack>
+                            <Image 
+                            className="skills-card-img"
+                            boxSize='80px'
+                            src='data:image/jpeg;base64,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'
+                            alt='Dan Abramov'
+                            cursor={"pointer"}
+                            
+                            />
+                            <Text color={"white"} className="skills-card-name">Python</Text>
+
+                    </VStack>
+                </GridItem>
             </Grid>
         </Box>
     )

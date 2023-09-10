@@ -18,8 +18,8 @@ import {
         <Stack
           borderWidth="1px"
           borderRadius="lg"
-          w={{ sm: '100%', md: '540px' }}
-          height={{ sm: '476px', md: '20rem' }}
+          w={{ base: '90%', md: '90%' }}
+          height={{ base: '100%', md: '100%' ,lg:"20rem" }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('white', 'gray.900')}
           boxShadow={'2xl'}
@@ -38,6 +38,7 @@ import {
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
+            gap={1}
             p={1}
             pt={2}>
             <Heading className="project-title" fontSize={'2xl'} fontFamily={'body'}>
@@ -68,10 +69,10 @@ import {
               padding={2}
               justifyContent={'space-between'}
               alignItems={'center'}>
-              <a  className="project-deployed-link" href='https://media-flow.netlify.app/' isExternal>
+              <a  className="project-deployed-link" href='https://media-flow.netlify.app/' target='_blank'>
               <Button
                 flex={1}
-                width="8vw"
+                width={{base:"19vw",md:"10vw",lg:"8vw"}}
                 fontSize={'sm'}
                 rounded={'full'}
                 _focus={{
@@ -83,10 +84,10 @@ import {
                 </Text>
               </Button>
               </a>
-              <a className="project-github-link" href='https://github.com/Arnab-108/spotty-butter-9254' isExternal>
+              <a className="project-github-link" href='https://github.com/fehmida99/Buffer.com-Clone' target='_blank'>
                 <Button
                     flex={1}
-                    width="8vw"
+                    width={{base:"19vw",md:"10vw",lg:"8vw"}}
                     fontSize={'sm'}
                     rounded={'full'}
                     bg={'blue.400'}

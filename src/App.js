@@ -8,17 +8,21 @@ import Skills from './component/Skills';
 import Project from './component/Project';
 import Contact from './component/Contact';
 import Mystats from './component/My Stats';
+import { Footer } from './footer';
+import Tools from './component/Tools';
 
 function App() {
   return (
-    <Box className="App">
+    <Box backgroundColor={"#191919"} className="App">
       <Navbar />
       <Home />
       <About />
       <Skills />
+      <Tools />
       <Project />
       <Contact />
       <Mystats />
+      <Footer />
     </Box>
   );
 }

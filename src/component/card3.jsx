@@ -11,29 +11,25 @@ import {
     Text,
     useColorModeValue,
   } from '@chakra-ui/react';
-
   
-  export default function Card1() {
+  export default function Card3() {
     return (
-      <Center  className="project-card" py={6}>
+        <Center className="project-card"  py={6}>
         <Stack
           borderWidth="1px"
           borderRadius="lg"
-          justify={"center"}
-          w={{ base: '90%', md:'90%' }}
-          height={{ base:'100%', md:'100%',lg:"21rem" }}
+          w={{ base: '90%', md: '90%' }}
+          height={{ base: '100%', md: '100%',lg:"20rem" }}
           direction={{ base: 'column', md: 'row' }}
           bg={useColorModeValue('white', 'gray.900')}
           boxShadow={'2xl'}
-          padding={4}
-          
-          >
+          padding={4}>
           <Flex flex={1} bg="blue.200">
             <Image
               objectFit="cover"
               boxSize="100%"
               src={
-                'https://images.hindustantimes.com/auto/img/2021/12/28/600x338/Indian_cars_1640662074513_1640662081298.jpg'
+                'https://assets.basspro.com/image/upload/c_scale,f_auto,q_auto,w_945/v1677858198/DigitalCreative/2023/Campaigns/wk09-3-9/Homepage/sfc_homepage_sub_rodreels_bps.png'
               }
             />
           </Flex>
@@ -42,21 +38,21 @@ import {
             flexDirection="column"
             justifyContent="center"
             alignItems="center"
+            gap={2}
             p={1}
-            gap={1}
             pt={2}>
             <Heading className="project-title" fontSize={'2xl'} fontFamily={'body'}>
-              Byecars_BUYC
+              Tackle & Trail
             </Heading>
             <Text fontWeight={600} color={'gray.500'} size="sm" mb={4}>
-              @Individual Project
+              @Colaborative Project
             </Text>
             <Text
               className="project-description"
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
-              A car deals project, where a dealer can post their cars , in order to sell them.
+              Tackle & Trail is a clone of an e-commerce website Basspro which sells quality fishing, hunting, boating and outdoor sporting goods.
             </Text>
             <Text
               className="project-tech-stack"
@@ -64,31 +60,31 @@ import {
               textAlign={'center'}
               color={useColorModeValue('gray.700', 'gray.400')}
               px={3}>
-              React | Chakra Ui | Redux | MongoDB | Express | JWT | Bcrypt
+              React | Redux | Chakra Ui
             </Text>
             <Stack
               width={'100%'}
-              pt={'4vh'}
+              mt={'2rem'}
               direction={'row'}
-              //padding={2}
+              padding={2}
               justifyContent={'space-between'}
               alignItems={'center'}>
-            <a  className="project-deployed-link" href='https://byecars.netlify.app/' target='_blank' >
+              <a  className="project-deployed-link" href='https://tackle-and-trail.netlify.app/' target='_blank'>
               <Button
                 flex={1}
                 width={{base:"19vw",md:"10vw",lg:"8vw"}}
                 fontSize={'sm'}
                 rounded={'full'}
                 _focus={{
-                  bg: 'gray.200',
+                    bg: 'gray.200',
                 }}
                 >
-                  <Text textDecoration={"none"}>
+                <Text textDecoration={"none"}>
                     Live Site
-                  </Text>
+                </Text>
               </Button>
-            </a>
-            <a className="project-github-link" href='https://github.com/Arnab-108/Byecars_BUYC' target='_blank'>
+              </a>
+              <a className="project-github-link" href='https://github.com/Ajay84sia/auspicious-sea-8816' target='_blank'>
                 <Button
                     flex={1}
                     width={{base:"19vw",md:"10vw",lg:"8vw"}}
@@ -97,20 +93,21 @@ import {
                     bg={'blue.400'}
                     color={'white'}
                     boxShadow={
-                    '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
+                        '0px 1px 25px -5px rgb(66 153 225 / 48%), 0 10px 10px -5px rgb(66 153 225 / 43%)'
                     }
                     _hover={{
-                    bg: 'blue.500',
+                        bg: 'blue.500',
                     }}
                     _focus={{
-                    bg: 'blue.500',
+                        bg: 'blue.500',
                     }}>
+                        
                     <Text textDecoration={"none"}>
                       Git Repo
                     </Text>
-                    
+                        
                 </Button>
-            </a>
+                </a>
             </Stack>
           </Stack>
         </Stack>
